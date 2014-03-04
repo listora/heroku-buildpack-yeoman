@@ -10,24 +10,15 @@ Usage
 Work with yeoman locally as you normally would. Push to Heroku with this buildpack, `bower install` and `grunt` will automatically be run. This buildpack will try to mirror the typical local yeoman workflow on Heroku.
 
     $ npm install -g yo grunt-cli bower
-    ...
-
     $ npm install -g generator-webapp
-    ...
-
     $ yo webapp
-    ...
-
     $ bower install
-    ...
-
     $ grunt
-    ...
 
-    $ heroku create --buildpack https://github.com/sayar/heroku-buildpack-yeoman.git
+    $ heroku create --buildpack https://github.com/eugeniodepalo/heroku-buildpack-yeoman.git
 
     $ git push heroku master
-    ...
+
     -----> Heroku receiving push
     -----> Fetching custom buildpack
     -----> Installing dependencies with npm 1.0.8
@@ -37,6 +28,7 @@ Work with yeoman locally as you normally would. Push to Heroku with this buildpa
            └── connect@1.6.2
            Dependencies installed
     -----> Found bower.json, running bower install
+    -----> Found Compass in package.json, installing it
     -----> Found Gruntfile, running grunt task
 
 Done. Your yeoman app should work.
@@ -44,4 +36,3 @@ Done. Your yeoman app should work.
 TODO
 ----
 * Vendor phantomjs
-* Install compass gem
