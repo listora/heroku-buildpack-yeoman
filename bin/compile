@@ -205,7 +205,7 @@ if [ -f $BUILD_DIR/grunt.js ] || [ -f $BUILD_DIR/Gruntfile.js ] || [ -f $BUILD_D
   # make sure that grunt-cli and bower are installed locally
   run_npm "install grunt-cli"
   echo "-----> Found Gruntfile, running grunt task"
-  grunt build
+  grunt build:dist
 else
   echo "-----> No Gruntfile (grunt.js, Gruntfile.js, Gruntfile.coffee) found"
 fi
